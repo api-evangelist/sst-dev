@@ -1,0 +1,170 @@
+aid: sst-dev
+name: SST
+description: SST is an open source TypeScript framework for building full-stack applications on your own infrastructure.
+  Originally known as Serverless Stack, it now ships as a single `sst.config.ts` file that uses Pulumi and Terraform
+  providers under the hood to deploy components across AWS, Cloudflare, and 150+ other providers. SST covers Lambda
+  functions, containers, queues, buckets, databases, cron jobs, and front-end frameworks like Next.js, Remix, Astro,
+  and SvelteKit, with resource linking that wires components together without hardcoded ARNs. SST Console adds a
+  hosted dashboard for logs, issues, deployments, and autodeploy from Git.
+image: https://sst.dev/favicon.svg
+type: Index
+position: Consumer
+access: Open Source
+tags:
+  - Serverless
+  - Infrastructure as Code
+  - AWS
+  - Cloudflare
+  - TypeScript
+  - Full-Stack
+  - Functions
+  - Containers
+  - Open Source
+  - Framework
+created: '2026-05-25'
+modified: '2026-05-25'
+url: https://raw.githubusercontent.com/api-evangelist/sst-dev/refs/heads/main/apis.yml
+specificationVersion: '0.20'
+apis:
+  - aid: sst-dev:sst-framework
+    name: SST Framework
+    description: 'The SST framework is an open source CLI and component library distributed via npm (`sst`) and as a
+      Go-based CLI. Developers describe their full-stack application in a single `sst.config.ts` file using SST
+      components (e.g. `sst.aws.Function`, `sst.aws.Bucket`, `sst.aws.Nextjs`, `sst.cloudflare.Worker`) plus any of the
+      150+ Pulumi/Terraform providers. The CLI (`sst init`, `sst dev`, `sst deploy`, `sst diff`, `sst remove`,
+      `sst secret`, `sst shell`, `sst tunnel`, `sst refresh`, `sst state`) drives local development with live Lambda
+      tunneling and production deployment with stage namespacing. The SDK exposes linked resources at runtime so app
+      code never hardcodes infrastructure identifiers.'
+    humanURL: https://sst.dev/docs
+    tags:
+      - Framework
+      - CLI
+      - Components
+      - TypeScript
+      - Serverless
+    properties:
+      - type: Documentation
+        url: https://sst.dev/docs
+      - type: GettingStarted
+        url: https://sst.dev/docs/start
+      - type: Tutorial
+        url: https://sst.dev/docs/learn
+      - type: GitHub
+        url: https://github.com/sst/sst
+      - type: Changelog
+        url: https://github.com/sst/sst/releases
+      - type: CLI
+        url: https://sst.dev/docs/reference/cli
+      - type: SDK
+        url: https://sst.dev/docs/reference/sdk
+      - type: Components
+        url: https://sst.dev/docs/all-providers
+      - type: Examples
+        url: https://sst.dev/docs/examples
+      - type: License
+        url: https://github.com/sst/sst/blob/dev/LICENSE
+  - aid: sst-dev:sst-console
+    name: SST Console
+    description: 'SST Console is a hosted SaaS dashboard at console.sst.dev that connects to SST apps deployed to AWS.
+      It surfaces CloudWatch logs, real-time issue detection for Node.js Lambdas and containers (with source maps and
+      Slack/email alerts), per-update permalinks showing resource diffs and build logs, autodeploy from GitHub branches
+      and pull requests, live `sst dev` session logs, and full resource visibility. The Console only supports apps
+      deployed to AWS today. Personal stages are free; production-tier workspaces above 350 active resources are billed
+      per resource per month.'
+    humanURL: https://sst.dev/docs/console
+    tags:
+      - Console
+      - Dashboard
+      - Monitoring
+      - Logs
+      - Deployments
+      - Autodeploy
+    properties:
+      - type: Documentation
+        url: https://sst.dev/docs/console
+      - type: Portal
+        url: https://console.sst.dev
+      - type: SignUp
+        url: https://console.sst.dev
+      - type: Pricing
+        url: https://sst.dev/docs/console#pricing
+      - type: Documentation
+        name: Autodeploy
+        url: https://sst.dev/docs/console#autodeploy
+      - type: Documentation
+        name: Issues
+        url: https://sst.dev/docs/console#issues
+      - type: GitHubRepo
+        url: https://github.com/sst/console
+common:
+  - type: Website
+    url: https://sst.dev
+  - type: Documentation
+    url: https://sst.dev/docs
+  - type: GitHubOrganization
+    url: https://github.com/sst
+  - type: GitHubRepo
+    name: SST Framework
+    url: https://github.com/sst/sst
+  - type: GitHubRepo
+    name: SST Console
+    url: https://github.com/sst/console
+  - type: GitHubRepo
+    name: OpenAuth
+    url: https://github.com/sst/openauth
+  - type: GitHubRepo
+    name: OpenCode
+    url: https://github.com/sst/opencode
+  - type: GitHubRepo
+    name: OpenControl
+    url: https://github.com/sst/opencontrol
+  - type: Blog
+    url: https://sst.dev/blog
+  - type: Discord
+    url: https://sst.dev/discord
+  - type: Twitter
+    url: https://twitter.com/SST_dev
+  - type: YouTube
+    url: https://www.youtube.com/c/sst-dev
+  - type: Tutorial
+    name: Guide
+    url: https://guide.sst.dev
+  - type: Examples
+    url: https://sst.dev/docs/examples
+  - type: NPM
+    name: npm package
+    url: https://www.npmjs.com/package/sst
+  - type: HomebrewTap
+    url: https://github.com/sst/homebrew-tap
+  - type: License
+    name: MIT
+    url: https://github.com/sst/sst/blob/dev/LICENSE
+  - type: Features
+    data:
+      - Single `sst.config.ts` declarative configuration for full-stack applications
+      - Built on Pulumi and Terraform providers (150+ supported providers)
+      - First-class AWS support — Lambda, Containers (ECS/Fargate), S3, SQS, SNS, EventBridge, DynamoDB, Postgres, VPC, Router, EFS, Workflow
+      - First-class Cloudflare support — Workers, R2, KV, D1, DNS
+      - Front-end framework components — Next.js, Remix, Astro, SvelteKit, SolidStart, React Router, Static Site
+      - Resource linking with typed SDK access at runtime — no hardcoded ARNs
+      - `sst dev` live mode with Lambda live tunneling and VPC tunneling
+      - Stage-based deployment model (`sst deploy --stage <name>`) with personal vs production stages
+      - Encrypted secrets management via `sst secret`
+      - SST Console — logs, issues, updates, autodeploy from GitHub branches & PRs
+      - Console issue detection for Node.js Lambdas and containers with source maps
+      - Per-update permalinks showing input/output diffs and build logs
+      - Autodeploy configured in `sst.config.ts` for branch and pull-request workflows
+      - Local `sst dev` logs streamed into the Console
+      - Open source MIT-licensed framework (sst/sst, sst/console)
+      - Sibling open source projects from Anomaly Innovations — OpenAuth, OpenCode, OpenControl, models.dev
+      - Cross-platform CLI — macOS, Linux, Windows (beta) via npm, Homebrew, Scoop
+      - Telemetry opt-out via `sst telemetry disable`
+    sources:
+      - https://sst.dev/docs
+      - https://sst.dev/docs/console
+      - https://github.com/sst/sst
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
+    X: apievangelist
+    url: https://apievangelist.com
