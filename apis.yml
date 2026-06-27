@@ -51,11 +51,11 @@ apis:
         url: https://sst.dev/docs/learn
       - type: GitHub
         url: https://github.com/sst/sst
-      - type: Changelog
+      - type: ChangeLog
         url: https://github.com/sst/sst/releases
       - type: CLI
         url: https://sst.dev/docs/reference/cli
-      - type: SDK
+      - type: SDKs
         url: https://sst.dev/docs/reference/sdk
       - type: Components
         url: https://sst.dev/docs/all-providers
@@ -84,7 +84,7 @@ apis:
         url: https://sst.dev/docs/console
       - type: Portal
         url: https://console.sst.dev
-      - type: SignUp
+      - type: Signup
         url: https://console.sst.dev
       - type: Pricing
         url: https://sst.dev/docs/console#pricing
@@ -147,7 +147,7 @@ common:
       - First-class Cloudflare support — Workers, R2, KV, D1, DNS
       - Front-end framework components — Next.js, Remix, Astro, SvelteKit, SolidStart, React Router, Static Site
       - Resource linking with typed SDK access at runtime — no hardcoded ARNs
-      - `sst dev` live mode with Lambda live tunneling and VPC tunneling
+      - "`sst dev` live mode with Lambda live tunneling and VPC tunneling"
       - Stage-based deployment model (`sst deploy --stage <name>`) with personal vs production stages
       - Encrypted secrets management via `sst secret`
       - SST Console — logs, issues, updates, autodeploy from GitHub branches & PRs
