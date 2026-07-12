@@ -97,6 +97,8 @@ apis:
       - type: GitHubRepo
         url: https://github.com/sst/console
 common:
+  - type: DomainSecurity
+    url: security/sst-dev-domain-security.yml
   - type: Website
     url: https://sst.dev
   - type: Documentation
