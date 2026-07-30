@@ -6,6 +6,17 @@ description: SST is an open source TypeScript framework for building full-stack 
   functions, containers, queues, buckets, databases, cron jobs, and front-end frameworks like Next.js, Remix, Astro,
   and SvelteKit, with resource linking that wires components together without hardcoded ARNs. SST Console adds a
   hosted dashboard for logs, issues, deployments, and autodeploy from Git.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 image: https://sst.dev/favicon.svg
 type: Index
 position: Consumer
