@@ -30,6 +30,17 @@ tags:
   - Full-Stack
   - Functions
   - Containers
+  - Open-Source
+  - Framework
+tags_raw:
+  - Serverless
+  - Infrastructure as Code
+  - AWS
+  - Cloudflare
+  - TypeScript
+  - Full-Stack
+  - Functions
+  - Containers
   - Open Source
   - Framework
 created: '2026-05-25'
@@ -84,6 +95,13 @@ apis:
       per resource per month.'
     humanURL: https://sst.dev/docs/console
     tags:
+      - Console
+      - Dashboard
+      - Monitoring
+      - Logs
+      - Deployment
+      - Autodeploy
+    tags_raw:
       - Console
       - Dashboard
       - Monitoring
