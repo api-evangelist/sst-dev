@@ -109,7 +109,7 @@ apis:
     humanURL: https://sst.dev/docs/console
     tags:
       - Console
-      - Dashboard
+      - Dashboards
       - Monitoring
       - Logs
       - Deployment
